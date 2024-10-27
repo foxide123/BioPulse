@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "kMRpPF9LHheBZfmDF9tIKsFAtpscPWNN31/6ATBvbxq9Y3Ye18Fe9jlqW9Ya3/3kHk5xRCtLSHPKjqBtkTBeXw==",
+  "dgSpecHash": "TbJbJN4XDpaxSvS65YZo6v8G8KjhpvhhBGV4gtn+2P9xUra39hM7ZGxuO0YKCC6pbB2a4WRX04n66vgCbcT10A==",
   "success": true,
   "projectFilePath": "/home/foxide/Desktop/BioPulse/dotnet/dotnet.csproj",
   "expectedPackageFiles": [
     "/home/foxide/.nuget/packages/avalonia/11.1.3/avalonia.11.1.3.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.angle.windows.natives/2.1.22045.20230930/avalonia.angle.windows.natives.2.1.22045.20230930.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.buildservices/0.0.29/avalonia.buildservices.0.0.29.nupkg.sha512",
+    "/home/foxide/.nuget/packages/avalonia.controls.colorpicker/11.1.0/avalonia.controls.colorpicker.11.1.0.nupkg.sha512",
+    "/home/foxide/.nuget/packages/avalonia.controls.datagrid/11.1.0/avalonia.controls.datagrid.11.1.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.desktop/11.1.0/avalonia.desktop.11.1.0.nupkg.sha512",
+    "/home/foxide/.nuget/packages/avalonia.diagnostics/11.1.0/avalonia.diagnostics.11.1.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.fonts.inter/11.1.0/avalonia.fonts.inter.11.1.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.freedesktop/11.1.0/avalonia.freedesktop.11.1.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.linuxframebuffer/11.1.3/avalonia.linuxframebuffer.11.1.3.nupkg.sha512",
@@ -16,6 +19,7 @@
     "/home/foxide/.nuget/packages/avalonia.skia/11.1.3/avalonia.skia.11.1.3.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.svg.skia/11.1.0.1/avalonia.svg.skia.11.1.0.1.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.themes.fluent/11.1.0/avalonia.themes.fluent.11.1.0.nupkg.sha512",
+    "/home/foxide/.nuget/packages/avalonia.themes.simple/11.1.0/avalonia.themes.simple.11.1.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.win32/11.1.0/avalonia.win32.11.1.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/avalonia.x11/11.1.0/avalonia.x11.11.1.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/communitytoolkit.mvvm/8.2.1/communitytoolkit.mvvm.8.2.1.nupkg.sha512",
@@ -28,7 +32,6 @@
     "/home/foxide/.nuget/packages/iot.device.bindings/3.2.0/iot.device.bindings.3.2.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/microcom.runtime/0.11.0/microcom.runtime.0.11.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
-    "/home/foxide/.nuget/packages/microsoft.net.illink.tasks/8.0.10/microsoft.net.illink.tasks.8.0.10.nupkg.sha512",
     "/home/foxide/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
@@ -62,10 +65,13 @@
     "/home/foxide/.nuget/packages/system.text.json/6.0.9/system.text.json.6.0.9.nupkg.sha512",
     "/home/foxide/.nuget/packages/tmds.dbus.protocol/0.16.0/tmds.dbus.protocol.0.16.0.nupkg.sha512",
     "/home/foxide/.nuget/packages/unitsnet/5.31.0/unitsnet.5.31.0.nupkg.sha512",
-    "/home/foxide/.nuget/packages/microsoft.netcore.app.runtime.linux-arm/8.0.10/microsoft.netcore.app.runtime.linux-arm.8.0.10.nupkg.sha512",
-    "/home/foxide/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-arm/8.0.10/microsoft.aspnetcore.app.runtime.linux-arm.8.0.10.nupkg.sha512",
-    "/home/foxide/.nuget/packages/microsoft.netcore.app.crossgen2.linux-x64/8.0.10/microsoft.netcore.app.crossgen2.linux-x64.8.0.10.nupkg.sha512",
-    "/home/foxide/.nuget/packages/microsoft.netcore.app.host.linux-arm/8.0.10/microsoft.netcore.app.host.linux-arm.8.0.10.nupkg.sha512"
+    "/home/foxide/.nuget/packages/xunit/2.9.2/xunit.2.9.2.nupkg.sha512",
+    "/home/foxide/.nuget/packages/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg.sha512",
+    "/home/foxide/.nuget/packages/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg.sha512",
+    "/home/foxide/.nuget/packages/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg.sha512",
+    "/home/foxide/.nuget/packages/xunit.core/2.9.2/xunit.core.2.9.2.nupkg.sha512",
+    "/home/foxide/.nuget/packages/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg.sha512",
+    "/home/foxide/.nuget/packages/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg.sha512"
   ],
   "logs": []
 }
