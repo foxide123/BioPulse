@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace dotnet.Features.TemperatureSensor.Models
 {
-    public class TemperatureSensors
+    public class TemperatureSensor
     {
         // Id for the temperature sensor
-        public int SensorId { get; set; }
+        public int Id { get; set; }
 
         /* Location of the sensor (ex. water tank, air, can be also TYPE of temperature sensor.)
         public string Location { get; set; }*/

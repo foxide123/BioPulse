@@ -1,11 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using dotnet.Features.TemperatureSensor.Models;
+
 
 
 namespace dotnet.Common.Data
 {
-    public class MyDbContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public DbSet<TemperatureReadings> TemperatureReadings { get; }
+        public DbSet<TemperatureSensor> TemperatureSensors { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
