@@ -5,7 +5,7 @@ namespace dotnet.Common.Data
 {
     public class MyDbContext : DbContext
     {
-        public DbSet<SensorRaedings> SensorReadings { get; set; }
+        public DbSet<TemperatureReadings> TemperatureReadings { get; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
