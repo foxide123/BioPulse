@@ -1,4 +1,4 @@
-namespace dotnet.Common.Error
+/*namespace dotnet.Common.ErrorHandling
 {
     public abstract class Failure
     {
@@ -15,3 +15,4 @@ namespace dotnet.Common.Error
         }
     }
 }
+*/
