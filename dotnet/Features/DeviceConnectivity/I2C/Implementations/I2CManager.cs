@@ -19,12 +19,15 @@ namespace dotnet.Features.DeviceConnectivity.I2C.Implementations
             Console.WriteLine(error);
         }
 
-        public void Initialize(int busId, byte devAddr)
+        public bool Initialize(int busId, byte devAddr)
         {
             var initializeResult = _i2cHardware.Initialize(busId, devAddr);
-            initializeResult.Match(
-                result => $"Successfuly initialized i2c interface",
-                error => $"Error: {error.ErrorMessage}"
+            return initializeResult.Match(
+                result => true,
+                error => {
+                    DisplayError(error.ErrorMessage);
+                    return false;
+                }
             );
         }
 
