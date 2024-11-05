@@ -1,4 +1,3 @@
-// ElectricityConsumption.js
 import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
@@ -11,7 +10,7 @@ const data = [
     { name: 'Jun', consumption: 35 },
 ];
 
-const ElectricityConsumption = () => (
+const ElectricityConsumptionChart = () => (
     <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '20px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', marginTop: '20px' }}>
         <h3>Electricity Consumption</h3>
         <ResponsiveContainer width="100%" height={200}>
@@ -25,4 +24,4 @@ const ElectricityConsumption = () => (
     </div>
 );
 
-export default ElectricityConsumption;
+export default ElectricityConsumptionChart;

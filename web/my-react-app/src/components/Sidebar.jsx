@@ -1,16 +1,17 @@
-// Sidebar.js
 import React from 'react';
+import { SidebarContainer, IconButton, AvatarContainer, ActiveIconButton } from '../styles';
 import { Home, Power, HelpOutline, Water } from '@mui/icons-material';
 import Avatar from '@mui/material/Avatar';
-import { SidebarContainer, IconButton } from '../styles';
 
 const Sidebar = () => (
     <SidebarContainer>
-            <IconButton><Home /></IconButton>
-            <IconButton><Power /></IconButton>
-            <IconButton><HelpOutline /></IconButton>
-            <IconButton><Water /></IconButton>
-            <Avatar style={{ marginTop: 'auto' }} src="https://randomuser.me/api/portraits/men/32.jpg" />
+        <ActiveIconButton><Home /></ActiveIconButton>
+        <IconButton><Power /></IconButton>
+        <IconButton><HelpOutline /></IconButton>
+        <IconButton><Water /></IconButton>
+        <AvatarContainer>
+            <Avatar src="https://randomuser.me/api/portraits/men/32.jpg" />
+        </AvatarContainer>
     </SidebarContainer>
 );
 
