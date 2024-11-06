@@ -90,23 +90,9 @@
               "target": "Package",
               "version": "[4.3.7.1207, )"
             },
-            "Microsoft.Data.Sqlite": {
+            "Moq": {
               "target": "Package",
-              "version": "[8.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[8.0.10, )"
+              "version": "[4.20.72, )"
             },
             "Serilog": {
               "target": "Package",
