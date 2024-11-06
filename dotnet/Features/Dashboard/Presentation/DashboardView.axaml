@@ -1,0 +1,97 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:svg="clr-namespace:Avalonia.Svg;assembly=Avalonia.Svg"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="dotnet.Features.Dashboard.Presentation.DashboardView">
+ <!--   <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="30"
+                Spacing="30">
+        <TextBlock FontSize="25">
+            Welcome to BioPulse
+        </TextBlock>
+    </StackPanel> -->
+    <!--
+        <Svg Name="svgDroplet" Path="/Assets/Droplet.svg" Width="70" Height="70"/>
+        <Svg Name="svgTemperature" Path="/Assets/Temperature.svg" Width="70" Height="70"/>
+        <Svg Name="svgWaterEC" Path="/Assets/Water_ec.svg" Width="70" Height="70"/>
+        <Svg Name="svgWaterPH" Path="/Assets/Water_ph.svg" Width="70" Height="70"/>
+        <Svg Name="svgWaterPump" Path="/Assets/Water_pump.svg" Width="70" Height="70"/>
+    -->
+    <Grid ColumnDefinitions="100, *" RowDefinitions="50, *" Margin="4">
+    <TextBlock Text="Logo" Grid.Row="0" Grid.Column="0"/>
+    <Grid Grid.Row="0" Grid.Column="1" ColumnDefinitions="*,100" RowDefinitions="*">
+        <TextBlock Text="Notification: qwerty" Grid.Row="0" Grid.Column="0" />
+        <TextBlock Text="Turn On/Off" Grid.Row="0" Grid.Column="1"/>
+    </Grid>
+    <Grid Grid.Row="1" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*, *, *, *, *, *, *, *" Background="LightBlue">
+        <TextBlock Text="Home" Grid.Row="0" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Connectivity" Grid.Row="1" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Sensors" Grid.Row="2" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Power Consumption" Grid.Row="3" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Help" Grid.Row="4" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Settings" Grid.Row="5" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Profile" Grid.Row="6" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Logout" Grid.Row="7" Grid.Column="0" Margin="5" Background="Blue"/>
+    </Grid>
+    
+    <Grid Grid.Row="1" Grid.Column="1" ColumnDefinitions="*, *" RowDefinitions="100, *" Background="LightBlue">
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ColumnDefinitions="*, *, *, *" RowDefinitions="*" Background="Green" Margin="5">
+            <TextBlock Text="Profile1" Grid.Row="0" Grid.Column="0" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Profile2" Grid.Row="0" Grid.Column="1" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Profile3" Grid.Row="0" Grid.Column="2" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Profile4" Grid.Row="0" Grid.Column="3" Background="LightGreen" Margin="5"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" ColumnDefinitions="*, *" RowDefinitions="*, *" Background="Green" Margin="5">
+            <TextBlock Text="Sensor1" Grid.Row="0" Grid.Column="0" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Sensor2" Grid.Row="0" Grid.Column="1" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Sensor3" Grid.Row="1" Grid.Column="0" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Sensor4" Grid.Row="1" Grid.Column="1" Background="LightGreen" Margin="5"/>
+        </Grid>
+        
+        <TextBlock Text="Image" Grid.Row="1" Grid.Column="1" Background="LightGreen" Margin="5"/>
+    </Grid>
+</Grid>
+<!--
+   <Grid ColumnDefinitions="100, *" RowDefinitions="50, *" Margin="4">
+    <TextBlock Text="Logo" Grid.Row="0" Grid.Column="0"/>
+    <Grid Grid.Row="0" Grid.Column="1" ColumnDefinitions="*,100" RowDefinitions="*">
+        <TextBlock Text="Notification: qwerty" Grid.Row="0" Grid.Column="0" />
+        <TextBlock Text="Turn On/Off" Grid.Row="0" Grid.Column="1"/>
+    </Grid>
+    <Grid Grid.Row="1" Grid.Column="0" ColumnDefinitions="*" RowDefinitions="*, *, *, *, *, *, *, *" Background="LightBlue">
+        <TextBlock Text="Home" Grid.Row="0" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Connectivity" Grid.Row="1" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Sensors" Grid.Row="2" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Power Consumption" Grid.Row="3" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Help" Grid.Row="4" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Settings" Grid.Row="5" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Profile" Grid.Row="6" Grid.Column="0" Margin="5" Background="Blue"/>
+        <TextBlock Text="Logout" Grid.Row="7" Grid.Column="0" Margin="5" Background="Blue"/>
+    </Grid>
+    
+    <Grid Grid.Row="1" Grid.Column="1" ColumnDefinitions="*, *" RowDefinitions="100, *" Background="LightBlue">
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ColumnDefinitions="*, *, *, *" RowDefinitions="*" Background="Green" Margin="5">
+            <TextBlock Text="Profile1" Grid.Row="0" Grid.Column="0" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Profile2" Grid.Row="0" Grid.Column="1" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Profile3" Grid.Row="0" Grid.Column="2" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Profile4" Grid.Row="0" Grid.Column="3" Background="LightGreen" Margin="5"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" ColumnDefinitions="*, *" RowDefinitions="*, *" Background="Green" Margin="5">
+            <TextBlock Text="Sensor1" Grid.Row="0" Grid.Column="0" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Sensor2" Grid.Row="0" Grid.Column="1" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Sensor3" Grid.Row="1" Grid.Column="0" Background="LightGreen" Margin="5"/>
+            <TextBlock Text="Sensor4" Grid.Row="1" Grid.Column="1" Background="LightGreen" Margin="5"/>
+        </Grid>
+        
+        <TextBlock Text="Image" Grid.Row="1" Grid.Column="1" Background="LightGreen" Margin="5"/>
+    </Grid>
+</Grid>
+-->
+</UserControl>
