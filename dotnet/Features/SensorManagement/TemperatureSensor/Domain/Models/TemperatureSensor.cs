@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dotnet.Features.TemperatureSensor.Models
+namespace dotnet.Features.SensorManagement.TemperatureSensor.Domain.Models
 {
     public class TemperatureSensor
     {

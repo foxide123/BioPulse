@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using dotnet.Features.TemperatureSensor.Models;
+using dotnet.Features.SensorManagement.TemperatureSensor.Domain.Models;
 
 
 
