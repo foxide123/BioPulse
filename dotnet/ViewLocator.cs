@@ -1,34 +1,29 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using dotnet.Common.Presentation;
+using dotnet.ViewModels;
 
 namespace dotnet;
 
 public class ViewLocator : IDataTemplate
 {
+
     public Control? Build(object? data)
     {
         if (data is null)
             return null;
         
-        var viewModelType = data.GetType();
-        var viewModelNamespace = viewModelType.Namespace;
+        var name = data.GetType().FullName!.Replace("ViewModel", "View", StringComparison.Ordinal);
+        var type = Type.GetType(name);
 
-        var viewNamespace = viewModelNamespace!.Replace("ViewModels", "Presentation.Views", StringComparison.Ordinal);
-        
-        // Construct full name of the view class
-        var viewTypeName = $"{viewNamespace}.{viewModelType.Name.Replace("ViewModel", "View")}";
-        var viewType = Type.GetType(viewTypeName);
-
-        if (viewType != null)
+        if (type != null)
         {
-            var control = (Control)Activator.CreateInstance(viewType)!;
+            var control = (Control)Activator.CreateInstance(type)!;
             control.DataContext = data;
             return control;
         }
         
-        return new TextBlock { Text = "Not Found: " + viewTypeName };
+        return new TextBlock { Text = "Not Found: " + name };
     }
 
     public bool Match(object? data)
