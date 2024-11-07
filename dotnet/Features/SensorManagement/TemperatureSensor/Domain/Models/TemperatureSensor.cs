@@ -3,30 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using dotnet.Features.SensorManagement.TemperatureSensor.Interfaces;
 namespace dotnet.Features.SensorManagement.TemperatureSensor.Domain.Models
 {
-    public class TemperatureSensor
+    public class TemperatureSensor : ISensor
     {
-        // Id for the temperature sensor
         public int Id { get; set; }
-
-        /* Location of the sensor (ex. water tank, air, can be also TYPE of temperature sensor.)
-        public string Location { get; set; }*/
-
-        // Current temperature reading 
-        public double CurrentTemperature { get; set; }
-
-        // Timestamp of the last reading
-        public DateTime LastReadingTime { get; set; }
-
-        //  update the temperature reading mnethod
-        public void UpdateTemperature(double newTemperature)
+        public string Name { get; set; }
+        public bool IsEnabled { get; set; }
+        public bool IsWireless { get; set; }
+        public double CurentReadingValue { get; set; }
+        public DateTime CurentReadingTime { get; set; }
+        public void UpdateReadingValue(double lastReadingValue)
         {
-            CurrentTemperature = newTemperature;
-            LastReadingTime = DateTime.Now; 
+            CurentReadingValue = lastReadingValue;
+            CurentReadingTime = DateTime.Now;
         }
-
-        
     }
+
 }
