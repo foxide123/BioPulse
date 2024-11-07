@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dotnet.Features.SensorManagement.TemperatureSensor.Interfaces
+namespace dotnet.Features.SensorManagement.Domain.Entities
 {
     public interface ISensor
     {
@@ -23,10 +23,10 @@ namespace dotnet.Features.SensorManagement.TemperatureSensor.Interfaces
 
 
         // Last temperature reading 
-        double CurentReadingValue { get; set; }
+        double CurrentReadingValue { get; set; }
 
         // Timestamp of the last reading
-        DateTime CurentReadingTime { get; set; }
+        DateTime CurrentReadingTime { get; set; }
 
 
 
