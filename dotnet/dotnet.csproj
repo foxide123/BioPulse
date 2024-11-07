@@ -4,7 +4,6 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>   
@@ -24,12 +23,15 @@
     <EmbeddedResource Remove="Features\DeviceConnectivity\**" />
     <None Remove="Common\Error\**" />
     <None Remove="Features\DeviceConnectivity\**" />
+    <AvaloniaResource Include="Common/Presentation/MainWindow.xaml" />
+    <AvaloniaResource Include="Features/Dashboard/Presentation/Views/DashboardView.xaml" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.1.3" />
     <PackageReference Include="Avalonia.Desktop" Version="11.1.0" />
     <PackageReference Include="Avalonia.LinuxFramebuffer" Version="11.1.3" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.1.3" />
     <PackageReference Include="Avalonia.Svg.Skia" Version="11.1.0.1" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.1.0" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.1.0" />
@@ -46,6 +48,8 @@
   <PrivateAssets>all</PrivateAssets>
 </PackageReference>
     <PackageReference Include="MQTTnet" Version="4.3.7.1207" />
+    <PackageReference Include="ReactiveUI" Version="20.1.63" />
+    <PackageReference Include="ReactiveUI.Fody" Version="19.5.41" />
     <PackageReference Include="Serilog" Version="4.1.0" />
     <PackageReference Include="SkiaSharp.NativeAssets.Linux" Version="2.88.8" />
     <PackageReference Include="Svg.Skia" Version="2.0.0.1" />
