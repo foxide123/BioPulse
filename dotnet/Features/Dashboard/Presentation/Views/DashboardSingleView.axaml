@@ -6,6 +6,6 @@
              mc:Ignorable="d"
              d:DesignWidth="800"
              d:DesignHeight="450"
-             x:Class="dotnet.Features.Dashboard.Presentation.DashboardSingleView">
-    <dashboardViews:DashboardSingleView />
+             x:Class="dotnet.Features.Dashboard.Presentation.Views.DashboardSingleView">
+   
 </UserControl>
